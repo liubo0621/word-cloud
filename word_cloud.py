@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from cut_text import CutText
 
 def main(text):
-    wordcloud = WordCloud(font_path='simsun.ttc')#, background_color="white")#中文需要指定字体
+    wordcloud = WordCloud(font_path='simsun.ttc', background_color="white")#中文需要指定字体
     # wordcloud = WordCloud(font_path='simsun.ttc', margin=5, width=1800, height=800, max_words=2000, max_font_size=60,
     #                       random_state=42)
     wordcloud.generate(text)
